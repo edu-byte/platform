@@ -1,0 +1,21 @@
+{{ define "title" }}
+{{ .Title }}
+{{ end }}
+
+{{ define "main" }}
+<div class="container">
+    <h1 class="title">{{ .Title }}</h1>
+    {{ if .Params.Author}}
+    <div class="author">
+        <a href="#" class="btn">
+            <i class="bi bi-person-circle"></i>
+            {{ .Params.Author }}
+        </a>
+    </div>
+    {{ end }}
+    <hr>
+    <p class="text-justify">
+        {{ .Content }}
+    </p>
+</div>
+{{ end }}

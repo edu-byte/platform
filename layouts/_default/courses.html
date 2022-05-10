@@ -1,0 +1,14 @@
+{{ define "main" }}
+<div class="container">
+    <h1>{{ .Title }}</h1>
+    <p>{{ .Content }}</p>
+    <div class="list-group">
+    {{ range .Site.Data.courses.courses }}
+        <a href="{{.path}}" class="list-group-item">
+            <h4 class="list-group-item-heading">{{.name}}</h4>
+            <p class="list-group-item-text">{{.description}}</p>
+        </a>
+    {{ end }}
+    </div>
+</div>
+{{ end }}

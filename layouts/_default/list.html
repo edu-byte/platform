@@ -1,0 +1,18 @@
+{{ define "title" }}
+{{ .Title }}
+{{ end }}
+
+{{ define "main" }}
+<div class="container">
+    <h1>{{.Title}}</h1>
+    <p>{{.Content}}</p>
+    <div class="list-group">
+        {{ range .Pages }}
+        <a href="{{ .RelPermalink }}" class="list-group-item">
+            <h4 class="list-group-item-heading">{{ .Title }}</h4>
+            <p class="list-group-item-text">{{ substr .Content 0 200 | plainify }}...</p>
+        </a>
+        {{ end }}
+    </div>
+</div>
+{{ end }}
