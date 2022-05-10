@@ -5,3 +5,7 @@ code.has-jax {
     border: inherit;
     color: #515151;
 }
+
+.max-width-md {
+    max-width: 768px;
+}
