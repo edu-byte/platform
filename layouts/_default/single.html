@@ -1,6 +1,6 @@
 {{ define "title" }} {{ .Title }} {{ end }}
 {{ define "main" }}
-<div class="container-fluid max-width-md">
+<div class="article container-fluid max-width-md">
     <h1 class="title">{{ .Title }}</h1>
     {{ if .Params.Author }}
     {{ $dataAuthor := index (where .Site.Data.authors.list "name" .Params.Author) 0 }}
