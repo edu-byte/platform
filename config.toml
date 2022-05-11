@@ -4,3 +4,4 @@ title = 'My New Hugo Site'
 
 [Params]
     custom_css = ['css/style.css']
+    mathjax_js = 'js/mathjax.js'
