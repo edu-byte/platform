@@ -1,21 +1,17 @@
-{{ define "title" }}
-{{ .Title }}
-{{ end }}
-
+{{ define "title" }} {{ .Title }} {{ end }}
 {{ define "main" }}
 <div class="container-fluid max-width-md">
     <h1 class="title">{{ .Title }}</h1>
-    {{ if .Params.Author}}
+    {{ if .Params.Author }}
+    {{ $dataAuthor := index (where .Site.Data.authors.list "name" .Params.Author) 0 }}
     <div class="author">
-        <a href="#" class="btn">
+        <a href="/authors/{{ lower $dataAuthor.nick }}" class="btn">
             <i class="bi bi-person-circle"></i>
             {{ .Params.Author }}
         </a>
     </div>
     {{ end }}
-    <hr>
-    <p class="text-justify">
-        {{ .Content }}
-    </p>
+    <hr />
+    <p class="text-justify">{{ .Content }}</p>
 </div>
 {{ end }}

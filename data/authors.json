@@ -1,11 +1,12 @@
 {
-    "authors": [
-        {
-            "name": "Кирило Байбула",
-            "email": "kirillbaybula@gmail.com",
-            "social": {
-                "facebook": "https://www.facebook.com/kirilobaybul"
-            }
-        }
-    ]
+  "list": [
+    {
+      "name": "Кирило Байбула",
+      "nick": "Velnbur"
+    },
+    {
+      "name": "Дмитро Пристайчук",
+      "nick": "E6h1l"
+    }
+  ]
 }
