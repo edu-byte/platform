@@ -1,11 +1,3 @@
-code.has-jax {
-    font: inherit;
-    font-size: 100%;
-    background: inherit;
-    border: inherit;
-    color: #515151;
-}
-
 .max-width-md {
     max-width: 768px;
 }
@@ -13,4 +5,21 @@ code.has-jax {
 .article img {
     display: block;
     margin: auto;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.article blockquote {
+    padding: 0 1em;
+    color: gray;
+    border-left: .25em solid gray;
+}
+
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
 }

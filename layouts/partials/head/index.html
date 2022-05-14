@@ -1,3 +1,5 @@
 {{ range .Site.Params.custom_css -}}
 <link rel="stylesheet" href="{{ . | absURL }}">
 {{- end }}
+{{ partial "head/bootstrap.html" . }}
+{{ partial "head/mathjax.html" . }}
